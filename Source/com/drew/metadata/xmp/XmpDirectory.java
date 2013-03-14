@@ -53,32 +53,38 @@ public class XmpDirectory extends Directory
      * A value from 0 to 5, or -1 if the image is rejected.
      */
     public static final int TAG_RATING = 0x1001;
-
-/*
+    /**
+     * Generally a color value Blue, Red, Green, Yellow, Purple
+     */
+    public static final int TAG_LABEL = 0x2000;
+    
     // dublin core properties
     // this requires further research
-    public static int TAG_TITLE = 0x100;
-    public static int TAG_SUBJECT = 0x1001;
-    public static int TAG_DATE = 0x1002;
-    public static int TAG_TYPE = 0x1003;
-    public static int TAG_DESCRIPTION = 0x1004;
-    public static int TAG_RELATION = 0x1005;
-    public static int TAG_COVERAGE = 0x1006;
-    public static int TAG_CREATOR = 0x1007;
-    public static int TAG_PUBLISHER = 0x1008;
-    public static int TAG_CONTRIBUTOR = 0x1009;
-    public static int TAG_RIGHTS = 0x100A;
-    public static int TAG_FORMAT = 0x100B;
-    public static int TAG_IDENTIFIER = 0x100C;
-    public static int TAG_LANGUAGE = 0x100D;
-    public static int TAG_AUDIENCE = 0x100E;
-    public static int TAG_PROVENANCE = 0x100F;
-    public static int TAG_RIGHTS_HOLDER = 0x1010;
-    public static int TAG_INSTRUCTIONAL_METHOD = 0x1011;
-    public static int TAG_ACCRUAL_METHOD = 0x1012;
-    public static int TAG_ACCRUAL_PERIODICITY = 0x1013;
-    public static int TAG_ACCRUAL_POLICY = 0x1014;
-*/
+//    public static int TAG_TITLE = 0x100;
+    /**
+     * Keywords
+     */
+    public static int TAG_SUBJECT = 0x2001;
+//    public static int TAG_DATE = 0x1002;
+//    public static int TAG_TYPE = 0x1003;
+//    public static int TAG_DESCRIPTION = 0x1004;
+//    public static int TAG_RELATION = 0x1005;
+//    public static int TAG_COVERAGE = 0x1006;
+//    public static int TAG_CREATOR = 0x1007;
+//    public static int TAG_PUBLISHER = 0x1008;
+//    public static int TAG_CONTRIBUTOR = 0x1009;
+//    public static int TAG_RIGHTS = 0x100A;
+//    public static int TAG_FORMAT = 0x100B;
+//    public static int TAG_IDENTIFIER = 0x100C;
+//    public static int TAG_LANGUAGE = 0x100D;
+//    public static int TAG_AUDIENCE = 0x100E;
+//    public static int TAG_PROVENANCE = 0x100F;
+//    public static int TAG_RIGHTS_HOLDER = 0x1010;
+//    public static int TAG_INSTRUCTIONAL_METHOD = 0x1011;
+//    public static int TAG_ACCRUAL_METHOD = 0x1012;
+//    public static int TAG_ACCRUAL_PERIODICITY = 0x1013;
+//    public static int TAG_ACCRUAL_POLICY = 0x1014;
+
 
     @NotNull
     protected static final HashMap<Integer, String> _tagNameMap = new HashMap<Integer, String>();
@@ -102,31 +108,31 @@ public class XmpDirectory extends Directory
         _tagNameMap.put(TAG_DATETIME_DIGITIZED, "Date/Time Digitized");
 
         _tagNameMap.put(TAG_RATING, "Rating");
+        _tagNameMap.put(TAG_LABEL, "Label");
 
-/*
         // this requires further research
-        _tagNameMap.put(TAG_TITLE, "Title");
+//        _tagNameMap.put(TAG_TITLE, "Title");
         _tagNameMap.put(TAG_SUBJECT, "Subject");
-        _tagNameMap.put(TAG_DATE, "Date");
-        _tagNameMap.put(TAG_TYPE, "Type");
-        _tagNameMap.put(TAG_DESCRIPTION, "Description");
-        _tagNameMap.put(TAG_RELATION, "Relation");
-        _tagNameMap.put(TAG_COVERAGE, "Coverage");
-        _tagNameMap.put(TAG_CREATOR, "Creator");
-        _tagNameMap.put(TAG_PUBLISHER, "Publisher");
-        _tagNameMap.put(TAG_CONTRIBUTOR, "Contributor");
-        _tagNameMap.put(TAG_RIGHTS, "Rights");
-        _tagNameMap.put(TAG_FORMAT, "Format");
-        _tagNameMap.put(TAG_IDENTIFIER, "Identifier");
-        _tagNameMap.put(TAG_LANGUAGE, "Language");
-        _tagNameMap.put(TAG_AUDIENCE, "Audience");
-        _tagNameMap.put(TAG_PROVENANCE, "Provenance");
-        _tagNameMap.put(TAG_RIGHTS_HOLDER, "Rights Holder");
-        _tagNameMap.put(TAG_INSTRUCTIONAL_METHOD, "Instructional Method");
-        _tagNameMap.put(TAG_ACCRUAL_METHOD, "Accrual Method");
-        _tagNameMap.put(TAG_ACCRUAL_PERIODICITY, "Accrual Periodicity");
-        _tagNameMap.put(TAG_ACCRUAL_POLICY, "Accrual Policy");
-*/
+//        _tagNameMap.put(TAG_DATE, "Date");
+//        _tagNameMap.put(TAG_TYPE, "Type");
+//        _tagNameMap.put(TAG_DESCRIPTION, "Description");
+//        _tagNameMap.put(TAG_RELATION, "Relation");
+//        _tagNameMap.put(TAG_COVERAGE, "Coverage");
+//        _tagNameMap.put(TAG_CREATOR, "Creator");
+//        _tagNameMap.put(TAG_PUBLISHER, "Publisher");
+//        _tagNameMap.put(TAG_CONTRIBUTOR, "Contributor");
+//        _tagNameMap.put(TAG_RIGHTS, "Rights");
+//        _tagNameMap.put(TAG_FORMAT, "Format");
+//        _tagNameMap.put(TAG_IDENTIFIER, "Identifier");
+//        _tagNameMap.put(TAG_LANGUAGE, "Language");
+//        _tagNameMap.put(TAG_AUDIENCE, "Audience");
+//        _tagNameMap.put(TAG_PROVENANCE, "Provenance");
+//        _tagNameMap.put(TAG_RIGHTS_HOLDER, "Rights Holder");
+//        _tagNameMap.put(TAG_INSTRUCTIONAL_METHOD, "Instructional Method");
+//        _tagNameMap.put(TAG_ACCRUAL_METHOD, "Accrual Method");
+//        _tagNameMap.put(TAG_ACCRUAL_PERIODICITY, "Accrual Periodicity");
+//        _tagNameMap.put(TAG_ACCRUAL_POLICY, "Accrual Policy");
+
     }
 
     @Nullable
