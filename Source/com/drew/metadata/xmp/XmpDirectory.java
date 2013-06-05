@@ -404,6 +404,11 @@ public class XmpDirectory extends Directory
 			e.printStackTrace();
 		}
 	}
+	
+	public void deleteProperty(int tagType)
+	{
+		getXMPMeta().deleteProperty(_tagSchemaMap.get(tagType), _tagPropNameMap.get(tagType));
+	}
 
 	public void updateStringArray(int tagType, String[] strings)
 	{
