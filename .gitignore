@@ -6,3 +6,6 @@
 
 /bin
 /build
+/.classpath
+/.settings/org.eclipse.jdt.core.prefs
+/gen/com/drew/metadata/BuildConfig.java
